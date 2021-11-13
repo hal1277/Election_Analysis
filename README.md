@@ -12,25 +12,25 @@ The requirement included using the data to provide a total vote count, total vot
     
     Total votes cast were calculated by using Python code to count the number of rows of data.   This produced a total vote count of 369,711.
 
-    # For each row in the CSV file.
-    for row in reader:
+        '# For each row in the CSV file.
+        for row in reader:
 
-        # Add to the total vote count
-        total_votes = total_votes + 1
+            # Add to the total vote count
+            total_votes = total_votes + 1
 
 - Votes per County
     Total votes per county were calcuated by using Python code to count the number of rows of data associated with each county name.  For each time a county name was encountered for the first time the county name was added to the county list dictionary.
     
-    if county_name not in county_list:
+        if county_name not in county_list:
             
-        # 4b: Add the existing county to the list of counties.
-        county_list.append(county_name)
+            # 4b: Add the existing county to the list of counties.
+            county_list.append(county_name)
 
-        # 4c: Begin tracking the county's vote count.
-        county_votes[county_name] = 0
+            # 4c: Begin tracking the county's vote count.
+            county_votes[county_name] = 0
 
-    '# 5: Add a vote to that county's vote count.
-    county_votes[county_name] += 1
+        '# 5: Add a vote to that county's vote count.
+        county_votes[county_name] += 1
 
 - Percentage Votes per County
     Percentage votes per county were calculated by using Python code to divide the number of votes per county by the total number of votes.  
