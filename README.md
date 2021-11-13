@@ -35,7 +35,7 @@ The requirement included using the data to provide a total vote count, total vot
 - Percentage Votes per County
     Percentage votes per county were calculated by using Python code to divide the number of votes per county by the total number of votes.  
     
-    votes = county_votes.get(county_name)
+        votes = county_votes.get(county_name)
         
         vote_percentage = float(votes) / float(total_votes) * 100
 
@@ -51,7 +51,7 @@ The requirement included using the data to provide a total vote count, total vot
 - Largest County 
     The largest county was determined by testing for which county the following condition held true (i.e. the county where the most votes were cast)
 
-    if (votes > county_count) and (vote_percentage > county_percentage):
+        if (votes > county_count) and (vote_percentage > county_percentage):
              county_count = votes
              largest_county = county_name
              county_percentage = vote_percentage
@@ -61,7 +61,7 @@ The requirement included using the data to provide a total vote count, total vot
 - Votes per candidate
     Total votes per candiate were calculated very similarily to the votes per county except rows were county based on candate name.  For each time a candidate name was encountered for the first time the candidate name was added to the candiate list dictionary. 
 
-    if candidate_name not in candidate_options:
+        if candidate_name not in candidate_options:
 
             # Add the candidate name to the candidate list.
             candidate_options.append(candidate_name)
@@ -69,17 +69,17 @@ The requirement included using the data to provide a total vote count, total vot
             # And begin tracking that candidate's voter count.
             candidate_votes[candidate_name] = 0
 
-    '# Add a vote to that candidate's count
-    candidate_votes[candidate_name] += 1
+        '# Add a vote to that candidate's count
+        candidate_votes[candidate_name] += 1
 
 - Percentage Votes per candidate
     Percentage votes per candidate were calculated by dividiing the number of votes per candidate by the total number of votes. 
 
-    for candidate_name in candidate_votes:
+        for candidate_name in candidate_votes:
 
-        # Retrieve vote count and percentage
-        votes = candidate_votes.get(candidate_name)
-        vote_percentage = float(votes) / float(total_votes) * 100
+            # Retrieve vote count and percentage
+            votes = candidate_votes.get(candidate_name)
+            vote_percentage = float(votes) / float(total_votes) * 100
 
     Total votes and percentage of votes per candidate:
 
@@ -92,7 +92,7 @@ The requirement included using the data to provide a total vote count, total vot
 - Winning cadidate 
     The wininng candiate and their total votes and % of total votes were tabulated by testing the following condition:
 
-    if (votes > winning_count) and (vote_percentage > winning_percentage):
+        if (votes > winning_count) and (vote_percentage > winning_percentage):
             winning_count = votes
             winning_candidate = candidate_name
             winning_percentage = vote_percentage
