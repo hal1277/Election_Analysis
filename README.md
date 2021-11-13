@@ -8,7 +8,7 @@ The requirement included using the data to provide a total vote count, total vot
 
 ## Election Audit Results
 
-- Total Votes
+- Total Votes:
     
     Total votes cast were calculated by using Python code to count the number of rows of data.   This produced a total vote count of 369,711.
 
@@ -18,7 +18,7 @@ The requirement included using the data to provide a total vote count, total vot
             # Add to the total vote count
             total_votes = total_votes + 1
 
-- Votes per County
+- Votes per County:
     Total votes per county were calcuated by using Python code to count the number of rows of data associated with each county name.  For each time a county name was encountered for the first time the county name was added to the county list dictionary.
     
         if county_name not in county_list:
@@ -32,7 +32,7 @@ The requirement included using the data to provide a total vote count, total vot
         '# 5: Add a vote to that county's vote count.
         county_votes[county_name] += 1
 
-- Percentage Votes per County
+- Percentage Votes per County:
     Percentage votes per county were calculated by using Python code to divide the number of votes per county by the total number of votes.  
     
         votes = county_votes.get(county_name)
@@ -48,7 +48,7 @@ The requirement included using the data to provide a total vote count, total vot
 
     Arapahoe: 6.7% (24,801)
 
-- Largest County 
+- Largest County: 
     The largest county was determined by testing for which county the following condition held true (i.e. the county where the most votes were cast)
 
         if (votes > county_count) and (vote_percentage > county_percentage):
@@ -58,7 +58,7 @@ The requirement included using the data to provide a total vote count, total vot
 
     Largest County Turnout: Denver
 
-- Votes per candidate
+- Votes per candidate:
     Total votes per candiate were calculated very similarily to the votes per county except rows were county based on candate name.  For each time a candidate name was encountered for the first time the candidate name was added to the candiate list dictionary. 
 
         if candidate_name not in candidate_options:
@@ -72,7 +72,7 @@ The requirement included using the data to provide a total vote count, total vot
         '# Add a vote to that candidate's count
         candidate_votes[candidate_name] += 1
 
-- Percentage Votes per candidate
+- Percentage Votes per candidate:
     Percentage votes per candidate were calculated by dividiing the number of votes per candidate by the total number of votes. 
 
         for candidate_name in candidate_votes:
@@ -89,7 +89,7 @@ The requirement included using the data to provide a total vote count, total vot
 
     Raymon Anthony Doane: 3.1% (11,606)
 
-- Winning cadidate 
+- Winning cadidate: 
     The wininng candiate and their total votes and % of total votes were tabulated by testing the following condition:
 
         if (votes > winning_count) and (vote_percentage > winning_percentage):
