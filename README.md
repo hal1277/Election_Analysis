@@ -2,7 +2,7 @@
 
 ## Overview of Election Audit
 
-The task was to use Python to help assist a Colorado board of elections employee to automate the audit the election results for a US congressional precinct in Colorado.  
+The task was to use Python to help assist a Colorado board of elections employee to automate the audit of the election results for a US congressional precinct in Colorado.  
 
 The requirement included using the data to provide a total vote count, total votes per candidate, percentage of total votes per candidate, the winning candidate, the votes per county, percentage of votes per county, and the largest county by number of votes. 
 
@@ -108,7 +108,7 @@ The requirement included using the data to provide a total vote count, total vot
     Winner: Diana DeGette
 
     Winning Vote Count: 272,892
-    
+
     Winning Percentage: 73.8%
 
 ## Election Audit Summary
