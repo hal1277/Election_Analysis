@@ -12,7 +12,7 @@ The requirement included using the data to provide a total vote count, total vot
     
     Total votes cast were calculated by using Python code to count the number of rows of data.   This produced a total vote count of 369,711.
 
-    '# For each row in the CSV file.
+    # For each row in the CSV file.
     for row in reader:
 
         # Add to the total vote count
